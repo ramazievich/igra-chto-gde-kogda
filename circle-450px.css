@@ -1,0 +1,196 @@
+/*450px*/
+
+
+.container_wrp .clock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: white;
+    border: 5px solid #d5d5d5;
+    background-image: url(./img/clock-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 1;
+    overflow: hidden;
+    top: -8px;
+    left: 410px;
+  }
+  
+  
+  .container_wrp .num1-2 {
+    top: calc(0% - 27px);
+    left: calc(50% - -3px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #d0b53b;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  31deg);
+  }
+  
+  .container_wrp .num2-2 {
+    top: calc(0% - -15px);
+    left: calc(50% - -60px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #4cd03b;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  60deg);
+  }
+  
+  .container_wrp .num3-2 {
+    top: calc(0% - -85px);
+    left: calc(50% - -73px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #2945e2;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  90deg);
+  }
+  
+  .container_wrp .num4-2 {
+    top: calc(0% - -153px);
+    left: calc(50% - -51px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #db1fc2;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  120deg);
+  }
+  
+  .container_wrp .num5-2 {
+    top: calc(0% - -204px);
+    left: calc(50% - -2px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #e91515;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  150deg);
+  }
+  
+  
+  .container_wrp .num6-2 {
+    top: calc(0% - -223px);
+    left: calc(50% - 67px);
+    width: 0;
+    height: 0;
+    border-top: 280px solid #deec18;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  180deg);
+  }
+  
+  .container_wrp .num7-2 {
+    top: calc(0% - -205px);
+    left: calc(50% - 136px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #0e7579;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  210deg);
+  }
+  
+  .container_wrp .num8-2 {
+    top: calc(0% - -154px);
+    left: calc(50% - 186px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #f784ed;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  240deg);
+  }
+  
+  
+  .container_wrp .num9-2 {
+    top: calc(0% - -85px);
+    left: calc(50% - 205px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #fd8a06;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  270deg);
+  }
+  
+  .container_wrp .num10-2 {
+    top: calc(0% - -16px);
+    left: calc(50% - 188px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #ff6262;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  300deg);
+  }
+  
+  .container_wrp .num11-2 {
+    top: calc(0% - 33px);
+    left: calc(50% - 137px);
+    width: 0;
+    height: 0;
+    border-top: 282px solid #f10b0b;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  329deg);
+  }
+  
+  .container_wrp .num12-2 {
+    top: calc(0% - 53px);
+    left: calc(50% - 72px);
+    width: 0;
+    height: 0;
+    border-top: 280px solid #3ba3d0;
+    border-top: 280px solid rgb(50,49,49);
+    border-left: 76px solid transparent;
+    border-right: 76px solid transparent;
+    border-bottom: 0;
+    transform: rotate( 
+  0deg);
+  }

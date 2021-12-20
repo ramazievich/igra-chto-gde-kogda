@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="./style.css">
+      <!---->
+      <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>    -->
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p2.js/0.6.0/p2.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+   </head>
+   <body>
+<div class="container_wrp">   
+   <div class="play_gong" id="play_gong-id">
+      <img class="gong" id="gong-id" src="./img/gong.svg" alt="gong" width="600" height="600">
+   </div>
+            <div class="clock">
+               <div class="roulette">
+                  <div class="num1-2"></div>
+                  <div class="num2-2"></div>
+                  <div class="num3-2"></div>
+                  <div class="num4-2"></div>
+                  <div class="num5-2"></div>
+                  <div class="num6-2"></div>
+                  <div class="num7-2"></div>
+                  <div class="num8-2"></div>
+                  <div class="num9-2"></div>
+                  <div class="num10-2"></div>
+                  <div class="num11-2"></div>
+                  <div class="num12-2"></div>
+               </div>
+               <div class="hoursHand"></div>
+               <div class="minsHand"></div>
+               <div class="secsHand"></div>
+               <div class="num1 clock_unit1"></div>
+               <div class="num2 clock_unit2"></div>
+               <div class="num3 clock_unit3"></div>
+               <div class="num4 clock_unit4"></div>
+               <div class="num5 clock_unit5"></div>
+               <div class="num6 clock_unit6"></div>
+               <div class="num7 clock_unit7"></div>
+               <div class="num8 clock_unit8"></div>
+               <div class="num9 clock_unit9"></div>
+               <div class="num10 clock_unit10"></div>
+               <div class="num11 clock_unit11"></div>
+               <div class="num12 clock_unit12"></div>
+               <div class="center"></div>
+            </div>
+            <button id="startBtn-id" class="startBtn">Крутить волчок</button>
+
+            <div class="scoring_wrp">
+             <div class="scoring_block">
+                <span class="scoring_title">Знатоки</span>
+
+                <input class="scoring_item_znatok" id="score_znatok-id" type="number">
+
+                <!--<div class="scoring_item_znatok"><span id="score_znatok-id" class="score_znatok">3</span></div>-->
+
+
+             </div>
+             <div class="scoring_block">
+              <span class="scoring_title">Магистры</span>
+              <input class="scoring_item_magistr" id="score_magistr-id" type="number">
+              <!--<div class="scoring_item_magistr"><span id="score_magistr-id" class="score_magistr">2</span></div>-->
+              
+           </div>
+          </div>
+          
+
+
+            <div class="resultContainer">
+              <div class="result-answer__wrp">
+                  <div class="foto_title_wrp">
+                    <h2 class="resultTitle">Вопрос - ЧТО? ГДЕ? КОГДА?</h2> 
+                    <img id="foto_people" src="#" alt="foto" width="130" height="130"> 
+                  </div>             
+                 <p class="resultText">Текст вопроса!</p>
+                 <p class="show-video_question">Показать видеовопрос</p>
+                 <video id="video_question" class="video_block" src="#" controls poster="./img/poster-video.jpg" width="300" height="180"></video>
+                 <p class="answerText">Ответ на вопрос!</p>
+                 <p class="show-video_answer">Показать ответ на видеовопрос</p>
+                 <video id="video_answer" class="video_block" src="#" controls poster="./img/poster-video-otvet.jpg" width="300" height="180"></video>
+                 <p class="resultBlits">Текст блиц вопроса!</p>
+                 <p class="answerBlits">Ответ на блиц вопрос!</p>
+                 <i class="nextquestion">Далее..</i>
+                 <p class="resultBlits2">Текст 2 блиц вопроса!</p>
+                 <p class="answerBlits2">Ответ на 2 блиц вопрос!</p>
+                 <p class="resultBlits3">Текст 3 блиц вопроса!</p>
+                 <p class="answerBlits3">Ответ на 3 блиц вопрос!</p>
+              </div>
+               <!--
+                  Таймер в карточке вопроса
+                  -->
+               <div class="clock-wrapper">
+                  <div class="clock-in">
+                     <div class="clock__inner-bg"></div>
+                     <div class="clock__inner-bg">
+                        <div class="clock__markers">
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                           <div class="clock__mark"></div>
+                        </div>
+                     </div>
+                     <div class="clock__center"></div>
+                     <div class="clock__inners">
+                        <div class="clock__inner-center"></div>
+                        <div class="clock__inner-center"></div>
+                        <div class="clock__inner-center"></div>
+                     </div>
+                     <div class="clock__pointer"></div>
+                     <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Created with Method Draw - https://github.com/duopixel/Method-Draw/ -->
+                        <defs>
+                           <radialGradient gradientTransform="translate(1,0.5) scale(-0.99,1)" r="1.200581" cy="0" cx="0" spreadMethod="pad" id="svg_9">
+                              <stop offset="0" stop-opacity="0.996094" stop-color="#ff415a"/>
+                              <stop offset="1" stop-opacity="0" stop-color="#252525"/>
+                           </radialGradient>
+                        </defs>
+                        <g>
+                           <title>Layer 1</title>
+                           <ellipse stroke="url(#svg_9)" ry="21.5%" rx="21.5%" id="svg_1" cy="50%" cx="50%" stroke-width="12%" fill="transparent"/>
+                        </g>
+                     </svg>
+                  </div>
+                  <div class="clock-buttons">
+                     <button type="button" class="clock-button" data-role="clock-reset">
+                     <span class="clock-button__text">Сброс</span>
+                     </button>
+                     <button type="button" class="clock-button clock-button--start" data-role="clock-start-stop">
+                     <span class="clock-button__text">1 мин</span>
+                     </button>
+                     <button type="button" class="clock-button20s clock-button--start20s" data-role="clock-start-stop20s">
+                      <span class="clock-button__text20s">20 сек</span>
+                      </button>
+                  </div>
+               </div>
+              <div class="button_back-answer__wrp">
+                <div class="show_questionBtn__wrp">
+                  <button class="music_show_question show_questionBtn">Показать вопрос</button>
+                  <button class="music_show_question2 show_questionBtnBlits2">Показать второй вопрос</button>
+                    <button class="music_show_question3 show_questionBtnBlits3">Показать третий вопрос</button>
+                </div>
+                <div class="answerBtn__wrp">
+                    <button class="music_show_answer answerBtn">Показать ответ</button>
+                    <button class="music_show_answer2 answerBtnBlits2">Показать ответ на второй вопрос</button>
+                    <button class="music_show_answer3 answerBtnBlits3">Показать ответ на третий вопрос</button>
+                </div>
+                 <button class="backBtn">Закрыть</button>                 
+              </div>
+            </div>
+
+            <audio id="fonovaia-muzika-id" class="fonovaia-muzika" autoplay loop="loop" preload="auto">
+               <source src="./audio/fonovaia-muzika.mp3" controls="" autobuffer="" />
+            </audio>   
+               
+               <audio id="music-igra-nasha-zhizn-id" class="music-igra-nasha-zhizn" preload="auto">
+                  <source src="./audio/zvuk-igra-nasha-zhizn.mp3" controls="" autobuffer="" />
+               </audio>          
+
+            <audio id="music-volchok-id" class="music-volchok" preload="auto">
+              <source src="./audio/volchok.mp3" controls="" autobuffer="" />
+           </audio>
+            <audio class="music-knopka-na-chasah" preload="auto">
+              <source src="./audio/golos-knopka-na-chasah.mp3" controls="" autobuffer="" />
+           </audio>
+            <audio id="zvuk-poiavlenia-okna-id" class="zvuk-poiavlenia-okna" preload="auto">
+               <source src="./audio/zvuk-poiavlenia-okna.mp3" controls="" autobuffer="" />
+            </audio>
+            <audio id="zvuk-zakritia-okna-id" class="zvuk-zakritia-okna" preload="auto">
+               <source src="./audio/zvuk-zakrivania-okna.mp3" controls="" autobuffer="" />
+            </audio>
+            <audio id="zvuk-obsuzdenia-voprosa-id" class="zvuk-obsuzdenia-voprosa" preload="auto">
+               <source src="./audio/1minTime.mp3" controls="" autobuffer="" />
+            </audio>
+            <audio id="zvuk-obsuzdenia-voprosa20s-id" class="zvuk-obsuzdenia-voprosa20s" preload="auto">
+              <source src="./audio/20secTime.mp3" controls="" autobuffer="" />
+           </audio>
+           <audio id="zvuk-poiavlenia-voprosa-id" class="zvuk-poiavlenia-voprosa" preload="auto">
+            <source src="./audio/zvuk-poiavlenia-voprosa.mp3" controls="" autobuffer="" />
+         </audio>
+         <audio id="zvuk-poiavlenia-otveta-id" class="zvuk-poiavlenia-otveta" preload="auto">
+          <source src="./audio/zvuk-poiavlenia-otveta.mp3" controls="" autobuffer="" />
+       </audio>
+       <audio id="zvuk-knopka-dalee-id" class="zvuk-knopka-dalee" preload="auto">
+        <source src="./audio/zvuk-knopka-dalee.mp3" controls="" autobuffer="" />
+     </audio>
+</div>
+      <!--<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+      <script src="./main.js"></script> 
+   </body>
+</html>
